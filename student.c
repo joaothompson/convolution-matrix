@@ -21,6 +21,11 @@ void frameMatrix(int m, int n, int matrix[m][n], int framed[m+2][n+2])
   return;
 }
 
+void convolution(int m, int n, int i, int j, int order, int matrix[m][n], int kernel[order][order])
+{
+  return;
+}
+
 void student(void) {
   // TODO: do everything.
   int m, n, std;
@@ -28,7 +33,10 @@ void student(void) {
   readInteger();
   readMatrix();
   readInteger();
-  frameMatrix();
+  readMatrix();
+  readInteger();
+  readInteger();
+  convolution();
   printMatrix();
   return;
 }
